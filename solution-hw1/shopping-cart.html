@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- "Open Sans" font sourced from GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <section>
+      <!-- bakery logo image -->
+      <div>
+        <a href="./index.html">
+          <img class="logo-image" src="../assets/logo/logo-01.svg" alt="Bun Bun bakery logo"/>
+          <div class="dividing-line"></div>
+        </a>
+      </div>
+
+      <!-- navigation bar with active page designated -->
+      <nav class="navigation-text center">
+        <p><a href="./index.html">PRODUCTS</a></p>
+        <p><span class="active-page"><a href="./shopping-cart.html">CART</a></span></p>
+      </nav>
+    </section>
+
+    <main>
+      <section>
+        <!-- page header (h1 for seo purposes) -->
+        <h1 class="center">Shopping Cart</h1>
+
+        <!-- selected product, including product detail and price -->
+        <div class="center">
+          <img class="shopping-cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" width="200"/>
+          <p class="remove-item-text">Remove</p>
+          <p class="shopping-cart-product-detail">Original Cinnamon Roll<br>Glazing: Keep original<br>Pack Size: 1</p>
+          <p class="shopping-cart-product-price">$2.49</p>
+        </div>
+
+        <!-- selected product, including product detail and price -->
+        <div class="center">
+          <img class="shopping-cart-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double Chocolate Cinnamon Roll" width="200"/>
+          <p class="remove-item-text">Remove</p>
+          <p class="shopping-cart-product-detail">Double Chocolate Cinnamon Roll<br>Glazing: Sugar milk<br>Pack Size: 6</p>
+          <p class="shopping-cart-product-price">$27.49</p>
+        </div>
+
+        <hr/>
+
+        <!-- total price and checkout button -->
+        <div class="center">
+            <p class="shopping-cart-product-price">Total: $29.94</p>
+            <button class="button-styles">Checkout</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

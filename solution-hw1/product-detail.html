@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop - Product Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- "Open Sans" font sourced from GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">      
+  </head>
+    
+  <body>
+    <section>
+      <!-- bakery logo image -->
+      <div>
+        <a href="./index.html">
+            <img class="logo-image" src="../assets/logo/logo-01.svg" alt="Bun Bun bakery logo" width="400" />
+            <div class="dividing-line"></div>
+        </a>
+      </div>
+
+      <!-- navigation bar with active page designated -->
+      <nav class="navigation-text center">
+        <p><span class="active-page"><a href="./index.html">PRODUCTS</a></span></p>
+        <p><a href="./shopping-cart.html">CART</a></p>
+      </nav>
+    </section>
+
+    <main>
+      <section>
+        <!-- page header (h1 for seo purposes) -->
+        <div class="center">
+          <h1>Original cinnamon roll</h1>
+          <!-- product detail image -->
+          <img class="product-detail-image" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" width="600"/>
+        </div>
+
+        <!-- dropdown menu via "select" tags -->
+        <div class="dropdown">
+          <p class="customization-text">Customize our delicious,<br> hand-made cinnamon roll to<br> your liking!</p>
+          <p class="dropdown-header">Glazing:</p>
+          <div class="dropdown-options">
+            <select name="glazing" id="glazing"> 
+              <option value="original">Keep Original</option> 
+              <option value="sugar-milk">Sugar Milk</option> 
+              <option value="vanilla-milk">Vanilla Milk</option> 
+              <option value="double-chocolate">Double Chocolate</option> 
+            </select>
+          </div>
+        </div>
+
+        <!-- dropdown menu via "select" tags -->
+        <div class="dropdown">
+          <p class="dropdown-header">Pack Size:</p>
+          <div class="dropdown-options">
+            <select name="pack-size" id="pack-size"> 
+              <option value="1">1</option> 
+              <option value="3">3</option> 
+              <option value="6">6</option> 
+              <option value="12">12</option> 
+            </select>
+          </div>
+        </div>
+
+        <!-- display product price and "add-to-cart" button inline -->
+        <div class="center">
+          <p class="add-to-cart-price">$2.49</p><button class="button-styles">Add to Cart</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
