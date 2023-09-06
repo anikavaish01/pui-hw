@@ -71,11 +71,6 @@ h1{
     cursor: pointer;
 }
 
-/* remove bolding */
-.bold-none{
-    font-weight: 400;
-}
-
 /* style product gallery images */
 .product-gallery-images{
     width: 400px;
@@ -86,15 +81,15 @@ h1{
 
 /* style product description on the product gallery page */
 .product-description{
-    font-size: 18px;
+    font-size: 18px;  
     text-decoration: underline;
-    text-decoration-thickness: 1px;
     padding-bottom: 2px;
 }
 
 /* style the product price on the product gallery page */
 .product-price{
     font-size: 18px;
+    font-weight:400;
 }
 
 /* style the product detail image */
