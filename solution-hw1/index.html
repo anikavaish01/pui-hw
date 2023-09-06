@@ -1,23 +1,22 @@
+<!-- Professor Ion recommended that we use "articles" to separate meaningful sections within the main section. Because I don't necessarily
+utilize headers for these "article" sections (it doesn't make sense to), I am getting 'warnings' on the html validator. -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Bun Bun Bake Shop - Product Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- "Open Sans" font sourced from GoogleFonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   
   <body>
-    <section>
+    <header>
       <!-- bakery logo image -->
       <div>
         <a href="./index.html">
           <img class="logo-image" src="../assets/logo/logo-01.svg" alt="Bun Bun bakery logo" width="400"/>
         </a>
-        <div class="dividing-line"></div>
+        <hr>
       </div>
       
       <!-- navigation bar with active page designated -->
@@ -25,7 +24,7 @@
         <p><span class="active-page"><a href="./index.html">PRODUCTS</a></span></p>
         <p><a href="./shopping-cart.html">CART</a></p>
       </nav>
-    </section>
+    </header>
 
     <main>
       <section>
@@ -33,64 +32,64 @@
         <h1 class="center">Our hand-made cinnamon rolls</h1>
         
         <!-- product box & selector for hover/click -->
-        <div class="product-wrapper">
+        <article class="product-wrapper">
           <a href="./product-detail.html">
             <img class="product-gallery-images" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" width="400"/>
             <p class="product-description">Original cinnamon roll</p>
             <!-- use span to target inline element & remove bold on hover -->
-            <p class="product-price"><span class="bold-none">$2.49</span></p>
+            <p class="product-price"><span class="bold-none">$ 2.49</span></p>
           </a>
-        </div>
+        </article>
   
         <!-- product box & selector for hover/click -->
-        <div class="product-wrapper">
+        <article class="product-wrapper">
           <a href="./product-detail.html">
             <img class="product-gallery-images" src="../assets/products/apple-cinnamon-roll.jpg" alt="Apple Cinnamon Roll" width="400"/>
             <p class="product-description">Apple cinnamon roll</p>
             <!-- use span to target inline element & remove bold on hover -->
-            <p class="product-price"><span class="bold-none">$3.49</span></p>
+            <p class="product-price"><span class="bold-none">$ 3.49</span></p>
           </a>
-        </div>
+        </article>
   
         <!-- product box & selector for hover/click -->
-        <div class="product-wrapper">
+        <article class="product-wrapper">
           <a href="./product-detail.html">
             <img class="product-gallery-images" src="../assets/products/raisin-cinnamon-roll.jpg" alt="Raisin Cinnamon Roll" width="400"/>
             <p class="product-description">Raisin cinnamon roll</p>
             <!-- use span to target inline element & remove bold on hover -->
-            <p class="product-price"><span class="bold-none">$2.99</span></p>
+            <p class="product-price"><span class="bold-none">$ 2.99</span></p>
           </a>
-        </div>
+        </article>
   
         <!-- product box & selector for hover/click -->
-        <div class="product-wrapper">
+        <article class="product-wrapper">
           <a href="./product-detail.html">
             <img class="product-gallery-images" src="../assets/products/walnut-cinnamon-roll.jpg" alt="Walnut Cinnamon Roll" width="400"/>
             <p class="product-description">Walnut cinnamon roll</p>
             <!-- use span to target inline element & remove bold on hover -->
-            <p class="product-price"><span class="bold-none">$3.49</span></p>
+            <p class="product-price"><span class="bold-none">$ 3.49</span></p>
           </a>
-        </div>
+        </article>
   
         <!-- product box & selector for hover/click -->
-        <div class="product-wrapper">
+        <article class="product-wrapper">
           <a href="./product-detail.html">
             <img class="product-gallery-images" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double Chocolate Cinnamon Roll" width="400"/>
             <p class="product-description">Double chocolate cinnamon roll</p>
             <!-- use span to target inline element & remove bold on hover -->
-            <p class="product-price"><span class="bold-none">$3.49</span></p>
+            <p class="product-price"><span class="bold-none">$ 3.49</span></p>
           </a>
-        </div>
+        </article>
   
         <!-- product box & selector for hover/click -->
-        <div class="product-wrapper">
+        <article class="product-wrapper">
           <a href="./product-detail.html">
             <img class="product-gallery-images" src="../assets/products/strawberry-cinnamon-roll.jpg" alt="Strawberry Cinnamon Roll" width="400"/>
             <p class="product-description">Strawberry cinnamon roll</p>
             <!-- use span to target inline element & remove bold on hover -->
-            <p class="product-price"><span class="bold-none">$3.49</span></p>
+            <p class="product-price"><span class="bold-none">$ 3.49</span></p>
           </a>
-        </div>
+        </article>
       </section> 
     </main>
   </body>

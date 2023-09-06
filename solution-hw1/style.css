@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap');
+
 /* center all divs */
 *{
     padding: 0px;
@@ -8,8 +10,9 @@
 /* set page-width & font-family */
 body{
     width: 1200px;
-    font-family: "Open Sans", sans-serif;
     margin-bottom: 50px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
 }
 
 /* style links */
@@ -18,9 +21,10 @@ a{
     color: #000;
 }
 
-/* center text */
-.center{
-    text-align: center;
+hr{
+    margin-bottom: 15px;
+    background-color: black;
+    height: 2px;
 }
 
 /* style heading 1 (page headers on every page) */
@@ -29,17 +33,16 @@ h1{
     font-weight: 400;
 }
 
+/* center text */
+.center{
+    text-align: center;
+}
+
 /* style bakery logo image */
 .logo-image{
     width: 400px;
     height: auto;
     margin: 30px 0px 20px 0px;
-}
-
-/* define the dividing line between the logo and page contents */
-.dividing-line{
-    width: 1200px;
-    border: 2px solid #000;
 }
 
 /* style the navigation bar text */
@@ -118,19 +121,20 @@ h1{
 /* style the dropdown prompts */
 .dropdown-header{
     text-align: left;
+    margin-bottom: 10px;
 }
 
 /* style the dropdown box */
  #glazing, #pack-size{
     width: 225px;
-    text-align: center;
+    height: 40px;
+    text-align: left;
 }
 
 /* style the product price text */
-.add-to-cart-price{
+.selected-product-price{
     display: inline-block;
-    text-align: left;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     margin: 40px 40px 30px 0px;
 }
@@ -138,7 +142,7 @@ h1{
 /* set the button styles */
 .button-styles{
     background-color: yellow;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     border-style: solid;
     border-color: #000;
@@ -172,10 +176,8 @@ h1{
 }
 
 /* style the horizontal line before the checkout order */
-hr{
-    margin-top: 20px;
+.checkout-total-line{
+    margin-top: 30px;
     margin-bottom: 40px;
-    width: 500px;
-    background-color: black;
-    height: 2px;
+    width:500px;
 }
