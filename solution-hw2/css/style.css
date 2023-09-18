@@ -106,7 +106,7 @@ h1{
 }
 /* style product description on the product gallery page */
 .product-description{
-    font-size: 18px;  
+    font-size: 20px;  
     text-decoration: underline;
     padding-bottom: 2px;
     padding-left: 5px;
@@ -114,7 +114,7 @@ h1{
 
 /* style the product price on the product gallery page */
 .product-price{
-    font-size: 18px;
+    font-size: 20px;
     font-weight:400;
     padding: 5px 0px 5px 5px;
 }
@@ -136,14 +136,14 @@ h1{
 
 /* style the text below the product detail image */
 .customization-text{
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 /* define the dropdown container */
 .dropdown{
-    width: 225px;
+    width: 270px;
     text-align: center;
     margin-left:0px;
 }
@@ -151,16 +151,16 @@ h1{
 /* style the dropdown prompts */
 .dropdown-header{
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .dropdown-options{
-    margin-bottom:20px;
+    margin-bottom: 30px;
 }
 
 /* style the dropdown box */
  #glazing, #pack-size{
-    width: 225px;
+    width: 270px;
     height: 40px;
     text-align: left;
     border: 3px solid black;
@@ -172,13 +172,13 @@ h1{
     font-size: 18px;
     font-weight: 600;
     margin-right: 30px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 /* set the button styles */
 .button-styles{
     background-color: yellow;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     border-style: solid;
     border-color: #000;
@@ -189,13 +189,8 @@ h1{
     flex-grow: 0;
 }
 
-.cart-position{
-    display: flex;
-    justify-content: flex-end;
-}
-
 .cart-wrapper{
-    margin-left:420px;
+    margin-left: 420px;
     margin-top: 20px;
     width: 800px; 
 }
@@ -216,7 +211,7 @@ h1{
 /* style the "remove" button text */
 .remove-item-text{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline;
     text-align:left;
     margin-top: 8px;
@@ -246,12 +241,10 @@ h1{
     font-size: 20px;
     margin-right: 50px;
     flex-grow: 1;
-}
-.price{
-    text-align:left;
+    text-align: right;
 }
 .checkout{
     text-align: right;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
