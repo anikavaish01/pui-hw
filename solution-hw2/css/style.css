@@ -45,10 +45,9 @@ h1{
 .page-header{
     display:flex;
     align-items:center;
-    /* flex: 1; */
 }
 .header-bar{
-    flex-grow:1;
+    flex-grow: 1;
 }
 /* style bakery logo image */
 .logo-image{
@@ -62,13 +61,10 @@ h1{
 .navigation-bar{
     display: flex;
     justify-content: flex-end;
-    /* text-align: right;
-    font-size: 16px;
-    margin: 0px 50px 30px 0px; */
 }
 
 .navigation-text{ 
-    margin-right:50px; 
+    margin-right: 70px; 
 }
 /* highlight the active page */
 .active-page{
@@ -169,7 +165,7 @@ h1{
 /* style the product price text */
 .product-detail-price{
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin-right: 30px;
     margin-top: 80px;
@@ -191,8 +187,7 @@ h1{
 
 .cart-wrapper{
     margin-left: 420px;
-    margin-top: 20px;
-    width: 800px; 
+    margin-top: 60px;
 }
 
 .cart-content{
@@ -227,8 +222,6 @@ h1{
 
 .cart-total{
     display: flex;
-    justify-content: flex-end;
-    text-align: right;
 }
 
 .total-text{
@@ -240,11 +233,11 @@ h1{
 .cart-price{
     font-size: 20px;
     margin-right: 50px;
-    flex-grow: 1;
     text-align: right;
 }
 .checkout{
     text-align: right;
-    margin-right: 50px;
+    margin-top: 10px;
+    width: 720px;
 }
 
