@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bun Bun Bake Shop - Product Detail</title>
     <link rel="stylesheet" href=./css/style.css type="text/css">
+    <script src="./js/rollsData.js" type="text/javascript"></script>
     <script defer src="./js/script.js" type="text/javascript"></script>
   </head>
     
@@ -20,7 +21,7 @@
             <p class="navigation-text"><a href="./shopping-cart.html">CART</a></p>
           </nav>
           <hr>
-          <h1>Original Cinnamon Roll</h1>
+          <h1 id="product-title">Original Cinnamon Roll</h1>
         </div>
       </div>
     </header>
@@ -28,7 +29,7 @@
     <main>
       <div class="product-detail">
         
-        <img class="product-detail-image" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" width="600"/>
+        <img class="product-detail-image" id='product-image' src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" width="600"/>
 
         <!-- dropdown menu via "select" tags -->
         <div class="dropdown">
@@ -48,7 +49,7 @@
 
           <div>
             <p class="product-detail-price">$2.49</p>
-            <button class="button-styles">Add to Cart</button>
+            <button class="button-styles" id="add-to-cart-button">Add to Cart</button>
           </div>
         </div>
       </div>
