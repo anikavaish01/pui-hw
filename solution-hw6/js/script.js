@@ -57,7 +57,6 @@ addToCart.addEventListener('click', updateConsole);
 // and appends it into the cart array
 function updateConsole(){
     cart.push(new Product(rollTitle, selectedGlazing, selectedPackSize, rollPrice));
-    console.log(cart);
     saveToLocalStorage();
 }
 
@@ -119,6 +118,7 @@ function saveToLocalStorage() {
     // from PUI: Lab 6
     const rollArray = Array.from(cart);
     const rollArrayString = JSON.stringify(rollArray);
+    console.log(rollArrayString);
   
     sessionStorage.setItem('storedRolls', rollArrayString);
 }
@@ -128,6 +128,7 @@ function retrieveFromLocalStorage() {
     // from PUI: Lab 6
     const rollArrayString = sessionStorage.getItem('storedRolls');
     const rollArray = JSON.parse(rollArrayString);
+    console.log(rollArrayString);
 
     // append 'added-to-cart' items into the cart array
     for (const r of rollArray) {
