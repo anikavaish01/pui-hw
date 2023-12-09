@@ -124,15 +124,15 @@ function updateTimelineCard(timelineCard, t) {
   const timelineImage = timelineCard.querySelector('.timeline__img');
   timelineImage.src = t.image;
 
-  timelineImage.onmouseover = (e) => {
-    const timelineHoverImage = e.target;
-    timelineHoverImage.src = t.hover_image;
-  }
+  // timelineImage.onmouseover = (e) => {
+  //   const timelineHoverImage = e.target;
+  //   timelineHoverImage.src = t.hover_image;
+  // }
 
-  timelineImage.onmouseout = (e) => {
-    const timelineHoverImage = e.target;
-    timelineHoverImage.src = t.image;
-  }
+  // timelineImage.onmouseout = (e) => {
+  //   const timelineHoverImage = e.target;
+  //   timelineHoverImage.src = t.image;
+  // }
 
   const timelineDescription = timelineCard.querySelector('.timeline__content-desc');
   timelineDescription.innerText = t.description;
