@@ -2,31 +2,45 @@
 <html lang="en">
 
 <head>
+  <!-- Set the character set for the document -->
   <meta charset="UTF-8">
+  <!-- Set the title of the document -->
   <title>timeline</title>
 
+  <!-- Include Normalize.css for consistent styling across browsers -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
+  <!-- Link to the custom stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
+  <!-- Main content of the document -->
   <main>
+    <!-- Section containing the timeline -->
     <section>
+      <!-- Container for the timeline items -->
       <div class="timeline-container" id="timeline-wrapper">
+        <!-- Header section of the timeline -->
         <header class="timeline-header">
+          <!-- Title of the timeline -->
           <h1 class="timeline-header__title">SHRADHA JAGIRDAR</h1>
         </header>
+
+        <!-- Section containing the actual timeline items -->
         <section>
+          <!-- Container for the timeline items -->
           <div class="timeline">
+            <!-- Template for a single timeline item -->
             <template class="timeline-item-wrapper">
+              <!-- Individual timeline item with data attribute "HYDERABAD, INDIA" -->
               <div class="timeline-item" data="HYDERABAD, INDIA">
+                <!-- Content of the timeline item -->
                 <div class="timeline__content">
+                  <!-- Image associated with the timeline item -->
                   <img class="timeline__img" src="" alt="" />
+                  <!-- Title of the timeline item -->
                   <h2 class="timeline__content-title"></h2>
+                  <!-- Description of the timeline item -->
                   <p class="timeline__content-desc"></p>
                 </div>
               </div>
@@ -35,13 +49,12 @@
         </section>
       </div>
     </section>
-
   </main>
 
+  <!-- Include jQuery library -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
+  <!-- Include custom JavaScript file for timeline functionality -->
   <script src="js/index.js"></script>
-
 </body>
 
 </html>

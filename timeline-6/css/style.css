@@ -1,5 +1,7 @@
+/* Importing fonts from Google Fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap');
 
+/* Styles for the timeline container */
 .timeline {
   display: flex;
   margin: 0 auto;
@@ -9,10 +11,12 @@
   position: relative;
 }
 
+/* Styles for the timeline header title */
 .timeline-header__title {
   background-color: black;
 }
 
+/* Styles for the timeline content title */
 .timeline__content-title {
   font-weight: bolder;
   font-size: 66px;
@@ -24,6 +28,7 @@
   color: rgb(212, 62, 62);
 }
 
+/* Styles for the timeline content description */
 .timeline__content-desc {
   margin: 0;
   font-size: 15px;
@@ -35,6 +40,7 @@
   line-height: 25px;
 }
 
+/* Vertical line in the timeline */
 .timeline:before {
   position: absolute;
   left: 50%;
@@ -45,12 +51,14 @@
   background: rgba(255, 136, 136, 0.07);
 }
 
+/* Media query for small screens */
 @media only screen and (max-width: 767px) {
   .timeline:before {
     left: 40px;
   }
 }
 
+/* Styles for each timeline item */
 .timeline-item {
   padding: 40px 0;
   opacity: .3;
@@ -63,6 +71,7 @@
   transform: translateY(-80px);
 }
 
+/* Styles for the date label on each timeline item */
 .timeline-item:before {
   content: attr(data);
   letter-spacing: 3px;
@@ -79,10 +88,12 @@
   right: calc(-100% - 56px);
 }
 
+/* Styles for odd-numbered timeline items */
 .timeline-item:nth-child(odd) {
   align-self: flex-end;
 }
 
+/* Styles for date label on odd-numbered timeline items */
 .timeline-item:nth-child(odd):before {
   right: auto;
   text-align: right;
@@ -93,22 +104,26 @@
   padding-right: 15px;
 }
 
+/* Styles for active timeline item */
 .timeline-item--active {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0px);
 }
 
+/* Styles for date label on active timeline item */
 .timeline-item--active:before {
   top: 50%;
   transition: .3s all .2s;
   opacity: 1;
 }
 
+/* Styles for content title on active timeline item */
 .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
 }
 
+/* Media query for small screens */
 @media only screen and (max-width: 767px) {
   .timeline-item {
     align-self: baseline !important;
@@ -130,11 +145,13 @@
   }
 }
 
+/* Styles for timeline item images */
 .timeline__img {
   max-width: 100%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Styles for the overall timeline container */
 .timeline-container {
   width: 100%;
   position: relative;
@@ -143,6 +160,7 @@
   background-size: cover;
 }
 
+/* Background overlay for the timeline container */
 .timeline-container:before {
   position: absolute;
   left: 0;
@@ -153,6 +171,7 @@
   content: "";
 }
 
+/* Styles for the timeline header section */
 .timeline-header {
   width: 100%;
   text-align: center;
@@ -160,6 +179,7 @@
   position: relative;
 }
 
+/* Styles for the timeline header title */
 .timeline-header__title {
   color: #fff;
   font-size: 46px;
@@ -170,6 +190,7 @@
   margin: 0;
 }
 
+/* Styles for the timeline header subtitle */
 .timeline-header__subtitle {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Pathway Gothic One", sans-serif;
