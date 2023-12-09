@@ -4,14 +4,14 @@ const TIMELINE_DATA = [
     year: "1974",
     location: "HYDERABAD, TELANGANA",
     image: "./hyderabad_baby.jpg",
-    alt_text: "Black-and-white photograph of family of 5 in front of a home outside a garden. Mom and dad stand side-by-side with mom holding a baby, and two other daughters stand in front of them.",
+    alt_text: "Black-and-white photograph of family of 5 in front of a home outside a garden.",
     description: "Within the four walls of this ancestral home located in the heart of the bustling city of Hyderabad, India, my grandmother delivered my mother on August 10, 1974 at 11:22 pm. Here, she was raised as the youngest of three sisters to a Colonel father and a mother involved in community leadership. This beautiful, yet humble home saw its fair share of mischief and fun: a large and grassy front garden made for some exciting activities including catching dragonflies and fostering stray kittens, while a terrace allowed for wonderful views, morning picnics, and picking pink bougainvillea flowers from nearby trees."
   },
   {
     year: "1975",
     location: "KANPUR, UTTAR PRADESH",
     image: "./kanpur.jpg",
-    alt_text: "./san_diego.jpg",
+    alt_text: "Family photo of dad holding one daughter in his arms, as the other two stand beside him.",
     description: "As a commanding officer in the Indian Army, my grandfather was given the unique opportunity to accompany a traveling troop of men through the mountains surrounding the nearby Tista River. My mother and her sisters accompanied him on this excursion. Along the way, they saw tucans, baboons, deer, and most memorable of all, an Indian leopard. My mother fondly remembers jumping into the pool below the Chitrey waterfall as well as lazing around in the sun afterwards and eating a batch of momos, or local street dumplings."
   },
   {
@@ -172,4 +172,4 @@ populateTimeline();
     });
   }
 })(jQuery);
-$("#timeline-1").timeline();
+$("#timeline-wrapper").timeline();
