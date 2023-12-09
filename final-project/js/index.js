@@ -1,4 +1,4 @@
-// Timeline data containing information for each timeline event
+// array of dictionaries containing information for each timeline event
 const TIMELINE_DATA = [
   {
     year: "1974",
@@ -100,42 +100,47 @@ const TIMELINE_DATA = [
   }
 ]
 
-// Function to populate the timeline using the provided data
+// function to clone template element
 function populateTimeline() {
   for (const t of TIMELINE_DATA) {
-    // Clone the timeline item template
+    // clone the timeline item template
     const template = document.querySelector('.timeline-item-wrapper');
     const clone = template.content.cloneNode(true);
 
-    // Update the cloned timeline item with data
+    // update the cloned timeline item with data
     updateTimelineCard(clone, t);
 
-    // Append the cloned timeline item to the timeline container
+    // append the cloned timeline item to the timeline container
     const timelineCard = document.querySelector('.timeline');
     timelineCard.appendChild(clone);
   }
 }
 
-// Function to update a timeline item with the provided data
+// function to update a timeline item with appropriate content
 function updateTimelineCard(timelineCard, t) {
-  const timelineYear = timelineCard.querySelector('.timeline__content-title');
+
+  // update year label
+  const timelineYear = timelineCard.querySelector('.timeline__year');
   timelineYear.innerText = t.year;
 
+  // update data tag with location
   const timelineLocation = timelineCard.querySelector('.timeline-item');
   timelineLocation.setAttribute('data', t.location);
 
+  // update timeline image src and alt-text
   const timelineImage = timelineCard.querySelector('.timeline__img');
   timelineImage.src = t.image;
   timelineImage.alt = t.alt_text;
 
-  const timelineDescription = timelineCard.querySelector('.timeline__content-desc');
+  // update timeline description
+  const timelineDescription = timelineCard.querySelector('.timeline__description');
   timelineDescription.innerText = t.description;
 }
 
-// Call the function to populate the timeline on page load
+// call the function to populate the timeline on page load
 populateTimeline();
 
-// jQuery plugin for the timeline functionality
+// jQuery function to update DOM with new timeline item on scroll
 (function ($) {
   $.fn.timeline = function () {
     var selectors = {
@@ -145,13 +150,13 @@ populateTimeline();
       img: ".timeline__img"
     };
 
-    // Set the first item as active and background image
+    // set the first item as active, set appropriate background image
     selectors.item.eq(0).addClass(selectors.activeClass);
     selectors.id.css("background-image", "url(" + selectors.item.first().find(selectors.img).attr("src") + ")");
 
     var itemLength = selectors.item.length;
 
-    // Handle scroll events to change the active timeline item
+    // handle scroll events to change the active timeline item
     $(window).scroll(function () {
       var max, min;
       var pos = $(this).scrollTop();
@@ -160,13 +165,15 @@ populateTimeline();
         max = ($(this).height() + $(this).offset().top);
         var that = $(this);
 
-        // Set the last item as active when scrolled past the second last item
+        // set the last item as active when scrolled past the second last item
         if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
           selectors.item.removeClass(selectors.activeClass);
           selectors.id.css("background-image", "url(" + selectors.item.last().find(selectors.img).attr('src') + ")");
           selectors.item.last().addClass(selectors.activeClass);
-        } else if (pos <= max - 40 && pos >= min) {
-          // Set the active item based on scroll position
+        }
+
+        else if (pos <= max - 40 && pos >= min) {
+          // set the active item based on scroll position
           selectors.id.css("background-image", "url(" + $(this).find(selectors.img).attr('src') + ")");
           selectors.item.removeClass(selectors.activeClass);
           $(this).addClass(selectors.activeClass);
@@ -176,5 +183,5 @@ populateTimeline();
   }
 })(jQuery);
 
-// Apply the timeline plugin to the timeline wrapper
+// apply the timeline update to the timeline wrapper
 $("#timeline-wrapper").timeline();

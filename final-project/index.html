@@ -1,67 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>My Mom's Journey</title>
-      <link rel="stylesheet" href="style.css" type="text/css">
-      <script defer src="script.js" type="text/javascript"></script>
-    </head>
-    
-  <body>
-    <div class="banner">
-      <div class="text"></div>
-    </div>
-    <div class="page_content">
-      <!-- <div class="dividing_block"></div> -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>timeline</title>
+
+  <!-- include 'normalize.css' for consistent styling across browsers -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <!-- include jQuery library -->
+  <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script defer src="js/index.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <main>
+    <!-- timeline section (for accessibility purposes)-->
+    <section>
+      <!-- timeline wrapper -->
+      <div class="timeline-container" id="timeline-wrapper">
+        <!-- timeline header text -->
+        <header class="timeline-header">
+          <h1 class="timeline-header__title">SHRADHA JAGIRDAR</h1>
+        </header>
+
+        <!-- timeline items section -->
+        <section>
+          <div class="timeline">
+            <!-- <template> tag to limit # of html elements -->
+            <template class="timeline-item-wrapper">
+              <!-- timeline-item with location as 'data' attribute (cloned element)-->
+              <div class="timeline-item" data="">
+                <div class="timeline__content">
+                  <img class="timeline__img" src="" alt="" />
+                  <h2 class="timeline__year"></h2>
+                  <p class="timeline__description"></p>
+                </div>
+              </div>
+            </template>
+          </div>
+        </section>
       </div>
-    <!-- <div>
-      <div class="container">
-        <div class="timeline">
-          <ul class="timeline-1">
-            <li>
-              <div class="flex-content">
-                <img class="images" id="my-img" src="mom_photo.png"/>
-                <div class="timeline-content">
-                  <h3 class="date">1974</h3>
-                  <h1>Born in Secunderabad, Hyderabad</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-              </div>
-              
-            </li>
-            <li>
-              <div class="flex-content">
-                <img class="images" src="mom-terrace.png"/>
-                <div class="timeline-content">
-                  <h3 class="date">1974</h3>
-                  <h1>Born in Secunderabad, Hyderabad</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex-content">
-                <img class="images" src="mom_photo.png"/>
-                <div class="timeline-content">
-                  <h3 class="date">1974</h3>
-                  <h1>Born in Secunderabad, Hyderabad</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex-content">
-                <img class="images" src="mom-terrace.png"/>
-                <div class="timeline-content">
-                  <h3 class="date">1974</h3>
-                  <h1>Born in Secunderabad, Hyderabad</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
